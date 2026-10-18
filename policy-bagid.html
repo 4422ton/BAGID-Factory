@@ -1,0 +1,184 @@
+<!-- Назначение файла: публичная страница Политики конфиденциальности с названием проекта из БД с RU/EN-представлением и юридическими версиями. -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#030b17">
+  <title>Политика конфиденциальности</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg?v=1.0.106">
+  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.106">
+  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.106">
+</head>
+<body class="legal-page" data-site-mode="bagid" data-legal-revision="1.5" data-title-ru="Политика конфиденциальности — {projectName}" data-title-en="Privacy Policy — {projectName}">
+  <!-- Общая верхняя панель юридических страниц использует тот же RU/EN-ключ, что и основной интерфейс. -->
+  <main class="legal-shell">
+    <header class="legal-topbar">
+      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.5" data-revision-en="Revision 1.5">Редакция 1.5</span><a class="legal-brand" href="./" aria-label="" data-legal-project-name-aria><span class="legal-brand-name" data-legal-project-name></span></a></div>
+      <span class="legal-topbar-spacer"></span>
+      <a class="legal-link" href="terms-bagid.html">Terms</a>
+      <a class="legal-link" href="./" data-legal-home>← BAGID</a>
+      <button class="legal-language-toggle" type="button" data-legal-language-toggle>EN</button>
+    </header>
+
+    <!-- Русская версия Политики конфиденциальности. -->
+    <article class="legal-language" data-legal-language="RU">
+      <section class="legal-hero legal-hero-privacy">
+        <p class="legal-kicker"><span data-legal-project-name></span> · Privacy Policy</p>
+        <h1>Политика конфиденциальности</h1>
+        <p class="legal-lead">Эта Политика объясняет, какие данные технически необходимы <span data-legal-project-name></span> для Web3-авторизации, работы профилей, раздач, поддержки, Premium Campaign и BAGID Subdomains, какие сведения остаются публичными в блокчейне TON и какие данные Сервис принципиально не запрашивает у пользователя.</p>
+        <div class="legal-meta"><span class="legal-chip">Редакция 1.5</span><span class="legal-chip">Дата редакции: 15.10.2026</span></div>
+      </section>
+
+      <div class="legal-notice legal-notice-ok"><strong>Главный принцип:</strong> <span data-legal-project-name></span> не требует обычной регистрации по ФИО, номеру телефона или e-mail и не получает seed-фразы либо приватные ключи кошелька. Авторизация основана на Web3-подтверждении владения кошельком и доменной identity.</div>
+      <div class="legal-notice"><strong>Важно:</strong> выражение «личные данные не хранятся» в техническом смысле не означает полное отсутствие любых идентификаторов. Для работы Сервиса сервер хранит или обрабатывает адрес кошелька, доменную identity, хэши сессий, пользовательский контент и служебные данные. Адрес кошелька, IP-адрес и иные online identifiers в некоторых юрисдикциях могут считаться персональными данными.</div>
+      <div class="legal-notice legal-notice-ok"><strong>Файлы раздач:</strong> <span data-legal-project-name></span> публикует карточку раздачи и 64-символьный BagID, но не хранит и не раздаёт payload-файлы раздач со своего веб-сервера. Такие файлы хранятся и передаются самими пользователями/участниками через внешнюю инфраструктуру. Сервис может обрабатывать технические metadata BagID и оформительские материалы, например обложку.</div>
+
+      <div class="legal-layout">
+        <div class="legal-document">
+          <section class="legal-section" id="ru-privacy-1">
+            <h2>1. Область действия</h2>
+            <p>1.1. Настоящая Политика применяется к веб-интерфейсу <span data-legal-project-name></span>, его серверному API и функциям, связанным с обычными и Premium-раздачами, системой «Поддержка», Web3-профилями, TON DNS, BAGID Subdomains, Portal, Root Control NFT и связанными on-chain операциями.</p>
+            <p>1.2. Под «Сервисом» понимаются программные компоненты <span data-legal-project-name></span>. Под «Оператором» — лицо или организация, фактически эксплуатирующие конкретный публичный экземпляр Сервиса.</p>
+            <p>1.3. Блокчейн TON, TON Connect/кошельки, TON DNS, IPFS, TON Storage, TON API-провайдеры и иные внешние системы являются самостоятельными технологиями/сервисами и могут применять собственные правила конфиденциальности.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-2">
+            <h2>2. Web3-авторизация вместо обычной учётной записи</h2>
+            <p>2.1. <span data-legal-project-name></span> не требует создавать парольную учётную запись. Подключение кошелька выполняется через поддерживаемый Web3-механизм, а доказательство контроля кошелька — криптографической подписью/TON Proof либо предусмотренным для среды кошелька native-механизмом.</p>
+            <p>2.2. Для полноценной identity Сервис проверяет допустимый домен <code>.ton</code>, BAGID-субдомен текущего Portal или NFT-субдомен из разрешённой Оператором сторонней TON DNS collection и соответствующий <strong>Wallet Record</strong>. Кошелёк без подходящей доменной identity может иметь только ограниченный гостевой сценарий, например покупку BAGID-субдомена, если продажи включены.</p>
+            <p>2.3. <strong><span data-legal-project-name></span> никогда не просит передать seed-фразу, приватный ключ или файл секретного ключа пользовательского кошелька.</strong> Подписание транзакций выполняется самим кошельком пользователя.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-3">
+            <h2>3. Что Сервис не требует</h2>
+            <p>3.1. Для стандартного использования не требуется указывать ФИО, паспортные данные, домашний адрес, номер телефона или e-mail.</p>
+            <p>3.2. Сервис не должен использовать пароль пользователя от кошелька, seed-фразу или приватный ключ и не хранит их в пользовательской базе <span data-legal-project-name></span>.</p>
+            <p>3.3. Если пользователь добровольно размещает личные сведения в имени профиля, комментарии, описании раздачи, <strong>Text Record</strong> или другом публичном поле, это является самостоятельным решением пользователя. Такой контент может стать публичным и/или попасть в неизменяемую on-chain историю.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-4">
+            <h2>4. Какие данные технически обрабатываются</h2>
+            <p>Для работы функций Сервиса могут обрабатываться следующие категории:</p>
+            <ul>
+              <li><strong>Web3-идентификаторы:</strong> адрес кошелька, основной <code>.ton</code>/BAGID/разрешённый субдомен Внешней Коллекции, отображаемый домен, адреса NFT/collection, chain/network identity, Wallet Record и результаты проверки владения.</li>
+              <li><strong>Сессии:</strong> идентификаторы сессии, хэш серверного токена, сроки действия, состояние отзыва и локальные данные сессии в браузере.</li>
+              <li><strong>Профиль:</strong> аватар, отображаемое имя/домен, Text Record cache, статус, роль, отметки активности и иные настройки интерфейса.</li>
+              <li><strong>Пользовательский контент и metadata карточки:</strong> созданные раздачи, 64-символьный BagID, названия/описания, категории, комментарии, лайки, ссылки, обложки, технический список/параметры файлов и иные сведения, которые пользователь сам публикует либо которые Сервис получает при технической проверке BagID. <strong>Payload-файлы раздачи не сохраняются в пользовательской базе <span data-legal-project-name></span> как раздаваемые файлы.</strong></li>
+              <li><strong>Платёжные и on-chain данные:</strong> адреса кошельков, суммы, transaction hash/LT, идентификаторы Campaign/NFT/Portal, статусы подтверждения, ссылки на блокчейн-транзакции, royalty BPS/epoch, адрес royalty snapshot/splitter и иные публичные данные, необходимые для расчёта выплат, возвратов и поддерживаемого TEP-66 royalty.</li>
+              <li><strong>Техническая безопасность:</strong> IP-адрес, заголовки запроса, время, endpoint, код результата и иные сведения могут кратковременно попадать в журналы сервера/Apache и механизмы защиты от сканирования, злоупотреблений и чрезмерных запросов.</li>
+            </ul>
+            <p><strong>Эти технические данные не превращают <span data-legal-project-name></span> в классический сервис регистрации по личности:</strong> они используются для работы Web3-сессии, безопасности, синхронизации блокчейна и функций, которые запросил пользователь.</p><p><strong><span data-legal-project-name></span> не обрабатывает данные в роли классического BitTorrent tracker.</strong> Сервис не обрабатывает запросы торрент-клиентов к трекеру, не формирует собственную tracker-базу peer IP, не рассчитывает upload/download ratio или torrent-рейтинг пользователей. Если интерфейс показывает значения «Сиды»/«Пиры», они могут быть получены как технические сведения от настроенного TON Storage API/узла для отображения или проверки BagID. IP-адреса, которые могут присутствовать в обычных журналах web/API безопасности, относятся к обращению к веб-сервису и не являются регистрацией пользователя как peer классического torrent tracker.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-5">
+            <h2>5. Блокчейн TON и публичность on-chain данных</h2>
+            <p>5.1. Транзакции, адреса контрактов и кошельков, NFT ownership, TON DNS Records, Root Control ownership и другие данные, записанные в TON, существуют независимо от базы <span data-legal-project-name></span> и доступны через публичную блокчейн-инфраструктуру.</p>
+            <p>5.2. <strong>Оператор не может удалить, отредактировать или «забыть» подтверждённую запись блокчейна задним числом.</strong> Изменить поддерживаемый DNS Record можно только новой авторизованной on-chain транзакцией, если контракт допускает такое изменение.</p>
+            <p>5.3. Subdomain NFT хранит свои основные metadata/records on-chain в соответствии с архитектурой проекта. Размещая Text Record, Wallet Record, TON Site или TON Storage Record, пользователь понимает публичный характер соответствующей blockchain-записи.</p>
+            <p>5.4. Параметры TEP-66 royalty BAGID Subdomain NFT — включая опубликованную ставку и адрес royalty snapshot/splitter — являются частью публично проверяемого on-chain состояния. Совместимый marketplace или explorer может самостоятельно читать, индексировать и сохранять эти сведения независимо от <span data-legal-project-name></span>.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-6">
+            <h2>6. Cookies, localStorage и локальное состояние</h2>
+            <p>6.1. Основной интерфейс использует браузерное локальное хранилище для языка, состояния Web3-сессии, локальных snapshot-кэшей, служебных настроек интерфейса и версии принятых Условий Использования, привязанной к адресу кошелька.</p>
+            <p>6.2. Сервер технически поддерживает защищённую session-cookie как опциональный канал авторизации; конкретная публичная конфигурация может держать этот режим выключенным. При включении такая cookie предназначена для аутентификации, а не для рекламного профилирования.</p>
+            <p>6.3. Очистка данных браузера может удалить локальную сессию и настройки, но <strong>не удаляет уже совершённые on-chain транзакции и публичные blockchain records.</strong></p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-7">
+            <h2>7. Зачем нужны эти данные</h2>
+            <p>Данные обрабатываются только в объёме, необходимом для:</p>
+            <ol>
+              <li>проверки Web3-авторизации и прав владельца домена/NFT;</li>
+              <li>показа профиля, раздач, комментариев, лайков и статусов;</li>
+              <li>создания и подтверждения платежей «Поддержка»;</li>
+              <li>создания, модерации, синхронизации и расчётов Premium Campaign;</li>
+              <li>покупки BAGID-субдоменов и управления DNS Records;</li>
+              <li>проверки Root Control NFT и прав управления Portal;</li>
+              <li>предотвращения злоупотреблений, диагностики ошибок и защиты API;</li>
+              <li>исполнения обязательных требований применимого законодательства, если они распространяются на Оператора.</li>
+            </ol>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-8">
+            <h2>8. Передача данных внешним системам</h2>
+            <p>8.1. Для выполнения выбранной пользователем функции данные могут направляться в TON blockchain, кошелёк/TON Connect, TON Center/TONAPI или иной настроенный blockchain provider, IPFS/TON Storage и другие инфраструктурные компоненты.</p>
+            <p>8.2. Публичная blockchain-информация может индексироваться обозревателями, маркетплейсами и другими третьими лицами без участия <span data-legal-project-name></span>.</p>
+            <p>8.3. Сервис не может отвечать за последующее копирование общедоступной on-chain информации независимыми третьими сторонами.</p>
+            <p>8.4. Для проверки BagID, размера, списка файлов или извлечения оформительской обложки Сервис может обращаться к настроенному TON Storage API/узлу. <strong>Такой технический запрос не означает, что payload-файлы раздачи размещены на веб-сервере <span data-legal-project-name></span> или раздаются им пользователям.</strong> Фактическое хранение/передача внешних файлов выполняются участниками соответствующей инфраструктуры.</p>
+            <p>8.5. При вторичной продаже BAGID NFT совместимый marketplace может самостоятельно запросить публичные TEP-66 royalty-параметры и обработать royalty-транзакцию. Поддержка royalty, состав данных, которые marketplace дополнительно обрабатывает, и его собственные комиссии определяются правилами и технической реализацией этой внешней площадки; <span data-legal-project-name></span> не контролирует эти процессы.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-9">
+            <h2>9. Срок хранения и удаление</h2>
+            <p>9.1. Off-chain записи хранятся столько, сколько они нужны для работы Сервиса, финансового/технического аудита, восстановления состояния, защиты от злоупотреблений и выполнения применимых обязательств. Конкретный срок может зависеть от типа записи и конфигурации сервера.</p>
+            <p>9.2. Удаление или скрытие карточки раздачи не означает удаления соответствующей транзакции, Premium Campaign, NFT или иной on-chain истории.</p>
+            <p>9.3. Блокчейн-записи не контролируются как обычная строка базы данных и <strong>не подлежат удалению Оператором</strong>.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-10">
+            <h2>10. Безопасность и ответственность пользователя</h2>
+            <p>10.1. Сервис применяет технические меры разделения сессий, проверки TON Proof/ownership, access-control и защиты API, однако ни одна система не гарантирует абсолютную безопасность.</p>
+            <p>10.2. Пользователь обязан самостоятельно защищать устройство, кошелёк, seed-фразу и подтверждать адрес, сумму и payload каждой транзакции в интерфейсе кошелька.</p>
+            <p>10.3. Потеря доступа к кошельку может означать потерю управления NFT, субдоменом, Root Control NFT, Portal и средствами, контролируемыми соответствующими smart contracts.</p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-11">
+            <h2>11. Права пользователя</h2>
+            <p>11.1. Если применимое законодательство предоставляет права доступа, исправления, ограничения обработки, удаления или возражения, пользователь может обратиться к Оператору через официальный канал связи, опубликованный в конкретном экземпляре Сервиса.</p>
+            <p>11.2. Такие права относятся к данным, которые реально контролирует Оператор. <strong>Они не позволяют Оператору стереть публичную и неизменяемую историю TON blockchain.</strong></p>
+          </section>
+
+          <section class="legal-section" id="ru-privacy-12">
+            <h2>12. Изменения Политики</h2>
+            <p>Политика может обновляться вместе с архитектурой Сервиса, smart contracts, способами авторизации или требованиями законодательства. Актуальная редакция публикуется на этой странице с номером версии и датой.</p>
+          </section>
+        </div>
+
+        <nav class="legal-toc" aria-label="Содержание">
+          <p class="legal-toc-title">Содержание</p>
+          <a href="#ru-privacy-1">1. Область действия</a><a href="#ru-privacy-2">2. Web3-авторизация</a><a href="#ru-privacy-3">3. Что не требуется</a><a href="#ru-privacy-4">4. Технические данные</a><a href="#ru-privacy-5">5. TON blockchain</a><a href="#ru-privacy-6">6. Cookies/localStorage</a><a href="#ru-privacy-7">7. Цели обработки</a><a href="#ru-privacy-8">8. Внешние системы</a><a href="#ru-privacy-9">9. Хранение</a><a href="#ru-privacy-10">10. Безопасность</a><a href="#ru-privacy-11">11. Права</a><a href="#ru-privacy-12">12. Изменения</a>
+        </nav>
+      </div>
+    </article>
+
+    <!-- Английская версия Privacy Policy соответствует русскому документу и фактической Web3-архитектуре. -->
+    <article class="legal-language" data-legal-language="EN" hidden>
+      <section class="legal-hero legal-hero-privacy">
+        <p class="legal-kicker"><span data-legal-project-name></span> · Privacy Policy</p>
+        <h1>Privacy Policy</h1>
+        <p class="legal-lead">This Policy explains what data <span data-legal-project-name></span> technically needs for Web3 authentication, profiles, releases, Support, Premium Campaigns and BAGID Subdomains, which information remains public on TON blockchain, and what personal credentials the Service deliberately does not request.</p>
+        <div class="legal-meta"><span class="legal-chip">Revision 1.5</span><span class="legal-chip">Revision date: 15 Oct 2026</span></div>
+      </section>
+
+      <div class="legal-notice legal-notice-ok"><strong>Core principle:</strong> <span data-legal-project-name></span> does not require conventional registration with a legal name, phone number or e-mail and does not obtain wallet seed phrases or private keys. Authentication is based on Web3 proof of wallet control and domain identity.</div>
+      <div class="legal-notice"><strong>Important:</strong> saying that the Service does not keep conventional personal registration data does not mean that no identifiers are processed at all. The server stores or processes wallet/domain identifiers, session hashes, user-generated content and operational data needed to provide the Service. A wallet address, IP address or other online identifier may be treated as personal data under applicable law.</div>
+      <div class="legal-notice legal-notice-ok"><strong>Release files:</strong> <span data-legal-project-name></span> publishes a release card and a 64-character BagID, but does not store or distribute release payload files from its web server. Such files are stored and transmitted by users/participants through external infrastructure. The Service may process BagID technical metadata and presentation assets such as a cover.</div>
+
+      <div class="legal-layout">
+        <div class="legal-document">
+          <section class="legal-section" id="en-privacy-1"><h2>1. Scope</h2><p>1.1. This Policy applies to the <span data-legal-project-name></span> web interface, server API and features for standard and Premium releases, Support, Web3 profiles, TON DNS, BAGID Subdomains, Portal, Root Control NFT and related on-chain operations.</p><p>1.2. “Service” means the <span data-legal-project-name></span> software components. “Operator” means the person or organization actually operating the particular public deployment of the Service.</p><p>1.3. TON blockchain, TON Connect/wallets, TON DNS, IPFS, TON Storage, TON API providers and other external systems are independent technologies/services and may apply their own privacy terms.</p></section>
+          <section class="legal-section" id="en-privacy-2"><h2>2. Web3 authentication instead of a password account</h2><p>2.1. <span data-legal-project-name></span> does not require a conventional password account. A supported Web3 connection is used and wallet control is proven by a cryptographic signature/TON Proof or the supported native mechanism of the wallet environment.</p><p>2.2. For full identity, the Service validates an eligible <code>.ton</code> domain, a BAGID subdomain of the current Portal, or an NFT-subdomain from a third-party TON DNS collection enabled by the Operator, together with its <strong>Wallet Record</strong>. A wallet without an eligible domain identity may only receive limited guest functionality, such as purchasing a BAGID subdomain when sales are enabled.</p><p>2.3. <strong><span data-legal-project-name></span> never asks a user to provide a wallet seed phrase, private key or private-key file.</strong> Transactions are signed inside the user's wallet.</p></section>
+          <section class="legal-section" id="en-privacy-3"><h2>3. Information the Service does not require</h2><p>3.1. Standard use does not require a legal name, passport details, home address, phone number or e-mail address.</p><p>3.2. The Service does not need the user's wallet password, seed phrase or private key and does not store them in the <span data-legal-project-name></span> user database.</p><p>3.3. If a user voluntarily places personal information in a profile name, comment, release description, <strong>Text Record</strong> or another public field, that is the user's own decision. Such content may become public and/or become part of immutable on-chain history.</p></section>
+          <section class="legal-section" id="en-privacy-4"><h2>4. Data technically processed</h2><p>The following categories may be processed to operate the Service:</p><ul><li><strong>Web3 identifiers:</strong> wallet address, primary <code>.ton</code>/BAGID/enabled External Collection subdomain, display domain, NFT/collection addresses, chain/network identity, Wallet Record and ownership verification results.</li><li><strong>Sessions:</strong> session identifiers, server-side token hash, expiry/revocation state and local browser session data.</li><li><strong>Profile:</strong> avatar, display name/domain, Text Record cache, status, role, activity timestamps and UI preferences.</li><li><strong>User content and release-card metadata:</strong> releases, the 64-character BagID, titles/descriptions, categories, comments, likes, links, covers, technical file-list/parameter information and other data supplied by the user or obtained during technical BagID verification. <strong>Release payload files are not stored in the <span data-legal-project-name></span> user database as files served to users.</strong></li><li><strong>Payment and on-chain data:</strong> wallet addresses, amounts, transaction hash/LT, Campaign/NFT/Portal identifiers, confirmation status, royalty BPS/epoch, royalty snapshot/splitter address and other public records needed to calculate payouts, refunds and supported TEP-66 royalty.</li><li><strong>Operational security:</strong> IP address, request headers, timestamp, endpoint, response code and related information may temporarily appear in server/Apache logs and anti-scanning/rate-abuse protection.</li></ul><p><strong>These technical records do not turn <span data-legal-project-name></span> into an identity-registration service:</strong> they are used for Web3 sessions, security, blockchain synchronization and the features requested by the user.</p><p><strong><span data-legal-project-name></span> does not process data as a conventional BitTorrent tracker.</strong> The Service does not process requests from torrent clients to a tracker, maintain its own tracker database of peer IP addresses, or calculate users' upload/download ratios or torrent ratings. If the interface shows “Seeds”/“Peers” values, they may be obtained as technical information from the configured TON Storage API/node for BagID display or verification. IP addresses that may appear in ordinary web/API security logs relate to access to the web service and are not registration of the user as a peer of a conventional torrent tracker.</p></section>
+          <section class="legal-section" id="en-privacy-5"><h2>5. TON blockchain and public on-chain data</h2><p>5.1. Transactions, wallet/contract addresses, NFT ownership, TON DNS Records, Root Control ownership and other data recorded on TON exist independently of the <span data-legal-project-name></span> database and are accessible through public blockchain infrastructure.</p><p>5.2. <strong>The Operator cannot retroactively delete, edit or “forget” a confirmed blockchain record.</strong> A supported DNS Record can only be changed by a new authorized on-chain transaction if the relevant contract permits it.</p><p>5.3. Subdomain NFT metadata/records follow the project's on-chain architecture. By publishing a Text Record, Wallet Record, TON Site or TON Storage Record, the user acknowledges the public nature of the corresponding blockchain record.</p><p>5.4. BAGID Subdomain NFT TEP-66 royalty parameters, including the published rate and royalty snapshot/splitter address, are part of publicly verifiable on-chain state. A compatible marketplace or explorer may independently read, index and retain this information without <span data-legal-project-name></span>.</p></section>
+          <section class="legal-section" id="en-privacy-6"><h2>6. Cookies, localStorage and local state</h2><p>6.1. The main interface uses browser local storage for language selection, Web3 session state, local snapshot caches, operational UI settings and the accepted Terms of Use version associated with the wallet address.</p><p>6.2. The server technically supports a secure session cookie as an optional authentication channel; a particular public deployment may keep that mode disabled. When enabled, the cookie is used for authentication rather than advertising profiling.</p><p>6.3. Clearing browser data can remove local sessions and preferences, but <strong>does not remove completed on-chain transactions or public blockchain records.</strong></p></section>
+          <section class="legal-section" id="en-privacy-7"><h2>7. Purposes of processing</h2><p>Data is processed only to the extent needed to:</p><ol><li>verify Web3 authentication and domain/NFT ownership rights;</li><li>display profiles, releases, comments, likes and statuses;</li><li>create and confirm Support payments;</li><li>create, moderate, synchronize and settle Premium Campaigns;</li><li>purchase BAGID subdomains and manage DNS Records;</li><li>verify Root Control NFT and Portal management authority;</li><li>prevent abuse, diagnose errors and protect the API;</li><li>comply with mandatory legal obligations where they apply to the Operator.</li></ol></section>
+          <section class="legal-section" id="en-privacy-8"><h2>8. External systems</h2><p>8.1. To perform a feature selected by the user, relevant data may be transmitted to TON blockchain, a wallet/TON Connect, TON Center/TONAPI or another configured blockchain provider, IPFS/TON Storage and other infrastructure components.</p><p>8.2. Public blockchain information may be indexed by explorers, marketplaces and other independent parties without <span data-legal-project-name></span>'s involvement.</p><p>8.3. The Service cannot control or be responsible for independent third parties copying information that is already public on-chain.</p><p>8.4. To verify a BagID, size, file listing or extract a presentation cover, the Service may query the configured TON Storage API/node. <strong>Such a technical request does not mean that release payload files are hosted on the <span data-legal-project-name></span> web server or distributed by it to users.</strong> Actual storage/transmission of external files is performed by participants in the relevant infrastructure.</p><p>8.5. When a Portal Operator enables a third-party TON DNS collection, the Service may query the configured blockchain/indexer provider for the public NFTs from that collection owned by the connected wallet and read public on-chain owner/collection/DNS Records for compatibility checks, authentication and display. As of this revision, this may include the GetGems collection <strong>“TON DNS Subdomains: *.lost.ton”</strong>.</p><p>8.6. Visiting GetGems.io and buying/selling an NFT takes place outside <span data-legal-project-name></span>. GetGems is an independent external service with its own terms and privacy practices. <span data-legal-project-name></span> does not provide GetGems with the user's seed phrase or private key.</p><p>8.7. On a secondary sale of a BAGID NFT, a compatible marketplace may independently request the public TEP-66 royalty parameters and process a royalty transaction. Royalty support, any additional data processed by the marketplace, and its own fees are governed by that external marketplace's rules and technical implementation; <span data-legal-project-name></span> does not control those processes.</p></section>
+          <section class="legal-section" id="en-privacy-9"><h2>9. Retention and deletion</h2><p>9.1. Off-chain records are kept for as long as needed for Service operation, financial/technical audit, state recovery, abuse protection and applicable obligations. The precise period may depend on the record type and server configuration.</p><p>9.2. Deleting or hiding a release card does not delete the related blockchain transaction, Premium Campaign, NFT or other on-chain history.</p><p>9.3. Blockchain records are not controlled like ordinary database rows and <strong>cannot be deleted by the Operator.</strong></p></section>
+          <section class="legal-section" id="en-privacy-10"><h2>10. Security and user responsibility</h2><p>10.1. The Service applies session separation, TON Proof/ownership checks, access control and API protection, but no system can guarantee absolute security.</p><p>10.2. Users are responsible for protecting their device, wallet and seed phrase and for checking the destination, amount and payload of each transaction before confirming it in the wallet.</p><p>10.3. Loss of wallet access may mean loss of control over an NFT, subdomain, Root Control NFT, Portal and funds governed by the relevant smart contracts.</p></section>
+          <section class="legal-section" id="en-privacy-11"><h2>11. User rights</h2><p>11.1. Where applicable law provides rights of access, rectification, restriction, erasure or objection, the user may contact the Operator through the official contact channel published by the particular Service deployment.</p><p>11.2. Those rights apply to information actually controlled by the Operator. <strong>They do not enable the Operator to erase public and immutable TON blockchain history.</strong></p></section>
+          <section class="legal-section" id="en-privacy-12"><h2>12. Policy changes</h2><p>This Policy may be updated as the Service architecture, smart contracts, authentication methods or legal requirements evolve. The current revision is published on this page with its version number and date.</p></section>
+        </div>
+
+        <nav class="legal-toc" aria-label="Contents"><p class="legal-toc-title">Contents</p><a href="#en-privacy-1">1. Scope</a><a href="#en-privacy-2">2. Web3 authentication</a><a href="#en-privacy-3">3. Data not required</a><a href="#en-privacy-4">4. Technical data</a><a href="#en-privacy-5">5. TON blockchain</a><a href="#en-privacy-6">6. Cookies/localStorage</a><a href="#en-privacy-7">7. Purposes</a><a href="#en-privacy-8">8. External systems</a><a href="#en-privacy-9">9. Retention</a><a href="#en-privacy-10">10. Security</a><a href="#en-privacy-11">11. Rights</a><a href="#en-privacy-12">12. Changes</a></nav>
+      </div>
+    </article>
+
+    <footer class="legal-footer"><span data-legal-project-name></span> · Privacy · Web3 / TON</footer>
+  </main>
+  <script type="module" src="assets/js/legal.js?v=1.0.106"></script>
+</body>
+</html>

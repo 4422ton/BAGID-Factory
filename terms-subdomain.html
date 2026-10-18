@@ -1,0 +1,134 @@
+<!-- Назначение файла: самостоятельный юридический документ режима SUBDOMAIN; две языковые версии и название проекта из базы данных. -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#030b17">
+  <title>Условия использования</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0.106">
+  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.106">
+  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.106">
+</head>
+<body class="legal-page" data-site-mode="subdomain" data-legal-revision="1.0" data-title-ru="Условия использования — {projectName}" data-title-en="Terms of Use — {projectName}">
+  <!-- Шапка позволяет переключить язык, открыть второй документ и вернуться в интерфейс. -->
+  <main class="legal-shell">
+    <header class="legal-topbar">
+      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.0" data-revision-en="Revision 1.0">Редакция 1.0</span><a class="legal-brand" href="./" data-legal-project-name-aria><span class="legal-brand-name" data-legal-project-name></span></a></div>
+      <span class="legal-topbar-spacer"></span>
+      <a class="legal-link" href="policy-subdomain.html">Privacy</a>
+      <a class="legal-link" href="./">← SUBDOMAIN</a>
+      <button class="legal-language-toggle" type="button" data-legal-language-toggle>EN</button>
+    </header>
+    <!-- Языковой блок RU: содержание и нумерованное оглавление документа. -->
+    <article class="legal-language" data-legal-language="RU">
+      <section class="legal-hero legal-hero-terms">
+        <p class="legal-kicker"><span data-legal-project-name></span> · Terms of Use</p>
+        <h1>Условия использования</h1>
+        <p class="legal-lead">Управление .ton-доменами, DNS и покупками NFT-субдоменов в независимых Portal.</p>
+        <div class="legal-meta"><span class="legal-chip">Редакция 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+      </section>
+      <div class="legal-notice legal-notice-danger">Внимание: каждый Portal имеет своего владельца и собственные риски. Проверяйте выбранный родительский домен и транзакцию перед подписью.</div>
+      <div class="legal-layout">
+        <div class="legal-document">
+          <section class="legal-section" id="ru-terms-1"><h2>1. Что представляет собой сервис</h2>
+            <p>1.1. Сервис <span data-legal-project-name></span> — интерфейс к сети TON для просмотра каталога родительских доменов Factory, покупки NFT-субдоменов у отдельных Portal и управления принадлежащими пользователю TON DNS-записями. Это не банк, гарант сделок и не единый продавец всех NFT.</p>
+            <p>1.2. Factory объединяет Registrar-контракты разных родительских .ton-доменов. У каждого Portal собственный владелец Root Control NFT (либо предусмотренный on-chain управляющий), собственные цены, правила продажи и технические решения. Отображение Portal в Factory не означает проверку надёжности владельца или гарантию качества его услуг.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-2"><h2>2. Кошелёк, полномочия и подтверждение</h2>
+            <p>2.1. Авторизация выполняется через подтверждение контроля кошелька TON. Сервис не запрашивает seed-фразу или приватный ключ. Покупки, изменения DNS, продление и другие платные операции подтверждаются пользователем в кошельке.</p>
+            <p>2.2. Владение Root Control NFT определяет полномочия над соответствующим Portal в пределах смарт-контрактов; владение отдельным Subdomain NFT даёт права только на соответствующий NFT и предусмотренные записи. LOCKED ограничивает изменения неизменяемых параметров Portal; не следует путать это с отменой всех прав владельца.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-3"><h2>3. Покупка и независимые владельцы Portal</h2>
+            <p>3.1. При покупке субдомена пользователь самостоятельно выбирает родительский .ton-домен, имя, продавца и проверяет отображённую сумму, адрес получателя, состояние Registrar и дополнительные требования владельца Portal.</p>
+            <p>3.2. При выборе чужого Portal (то есть родительского домена, который обслуживается другим владельцем, даже если Registrar входит в тот же Factory) Сервис предоставляет лишь технический доступ к сделке. Работа выбранного домена, доступность его инфраструктуры, будущее поведение владельца и последствия его действий не гарантируются оператором этого сайта. Правила и обязательства стороннего владельца могут отличаться от настоящих Условий.</p>
+            <p>3.3. Отдельное подтверждение риска в интерфейсе показывается перед отправкой первой покупки в выбранном стороннем Portal. Оно не заменяет проверку сделки в самом кошельке.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-4"><h2>4. Оплата, комиссии и royalty</h2>
+            <p>4.1. Пользователь оплачивает стоимость субдомена, комиссии и сетевые расходы, отображённые при подтверждении. При первичной покупке Factory удерживает предусмотренную контрактом комиссию; она отличается от royalty вторичного рынка.</p>
+            <p>4.2. При перепродаже Subdomain NFT royalty может состоять из двух долей: Factory и Registrar. Их суммарная ставка отображается в параметрах соответствующего Portal и может обновляться по правилам контрактов. Существующие листинги NFT на сторонних площадках могут сохранять ранее записанные ставки.</p>
+            <p>4.3. При перепродаже Root Control NFT действует отдельная ставка royalty Factory. Marketplace может не поддерживать или не применять royalty; Сервис не гарантирует поступление вознаграждения от независимой площадки. Конкретные ставки уточняются в текущем on-chain состоянии перед операцией.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-5"><h2>5. DNS-записи и продление родительского домена</h2>
+            <p>5.1. Интерфейс позволяет в пределах действующих прав записывать или очищать Wallet Record, TON Site, TON Storage, Text Record, настройки Hosting, а также инициировать поддерживаемое продление родительского .ton-домена.</p>
+            <p>5.2. Некорректные записи могут перенаправить домен на посторонний ресурс, нарушить работу сайта или доступ к имени. Сроки продления, расчёт комиссий и судьба истёкшего домена зависят от TON DNS и соответствующих контрактов. ROOT CONTROL не подменяет собой исходный TON DNS NFT: права определяются актуальным состоянием Vault, Registrar и Root Control.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-6"><h2>6. Риски и возвраты</h2>
+            <p>6.1. Подписанные и подтверждённые в блокчейне транзакции обычно необратимы. Ошибка в адресе, имени, комиссии или выбранном Portal может привести к безвозвратным расходам. Возврат возможен только по предусмотренному смарт-контрактом сценарию либо если того требует обязательное законодательство.</p>
+            <p>6.2. Сервис предоставляется «как есть» в пределах, допускаемых применимым законодательством. Оператор не гарантирует доходность, рост стоимости NFT, постоянную доступность TON, DNS, сторонних Portal, кошельков или маркетплейсов. Пользователь принимает решение на собственный риск.</p>
+            <p>6.3. Ограничение ответственности не исключает права потребителя или другие обязанности, которые по применимому закону нельзя исключить соглашением.</p>
+          </section>
+          <section class="legal-section" id="ru-terms-7"><h2>7. Редакция и согласие</h2>
+            <p>7.1. Перед первой платной операцией, а затем при изменении редакции, Сервис запрашивает явное принятие этих Условий. Отказ отменяет платную операцию до открытия подписи транзакции.</p>
+            <p>7.2. Решение о принятии хранится для кошелька в базе отдельно от режима BAGID. Изменение названия проекта в тексте не меняет указанные on-chain права и обязанности независимых владельцев Portal.</p>
+          </section>
+        </div>
+        <nav class="legal-toc"><p class="legal-toc-title">Содержание</p>
+          <a href="#ru-terms-1">1. Что представляет собой сервис</a>
+          <a href="#ru-terms-2">2. Кошелёк, полномочия и подтверждение</a>
+          <a href="#ru-terms-3">3. Покупка и независимые владельцы Portal</a>
+          <a href="#ru-terms-4">4. Оплата, комиссии и royalty</a>
+          <a href="#ru-terms-5">5. DNS-записи и продление родительского домена</a>
+          <a href="#ru-terms-6">6. Риски и возвраты</a>
+          <a href="#ru-terms-7">7. Редакция и согласие</a>
+        </nav>
+      </div>
+    </article>
+    <!-- Языковой блок EN: содержание и нумерованное оглавление документа. -->
+    <article class="legal-language" data-legal-language="EN" hidden>
+      <section class="legal-hero legal-hero-terms">
+        <p class="legal-kicker"><span data-legal-project-name></span> · Terms of Use</p>
+        <h1>Terms of Use</h1>
+        <p class="legal-lead">Manage .ton domains, DNS and NFT subdomain purchases across independent Portals.</p>
+        <div class="legal-meta"><span class="legal-chip">Revision 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+      </section>
+      <div class="legal-notice legal-notice-danger">Important: each Portal has an independent owner and its own risks. Verify the parent domain and transaction before signing.</div>
+      <div class="legal-layout">
+        <div class="legal-document">
+          <section class="legal-section" id="en-terms-1"><h2>1. About the Service</h2>
+            <p>1.1. <span data-legal-project-name></span> is a TON interface for browsing parent domains in the Factory directory, purchasing NFT subdomains from individual Portals and managing TON DNS records for assets you own. It is not a bank, escrow agent or a universal seller of all NFTs.</p>
+            <p>1.2. Factory lists Registrar contracts belonging to different parent .ton domains. Each Portal has its own Root Control NFT owner (or authorized on-chain manager), pricing and services. Inclusion in Factory does not certify the owner's reliability or guarantee third-party performance.</p>
+          </section>
+          <section class="legal-section" id="en-terms-2"><h2>2. Wallets and authority</h2>
+            <p>2.1. Login uses proof of control of a TON wallet. We never request a recovery phrase or private key. You approve purchases, DNS updates, renewal and other paid transactions inside your wallet.</p>
+            <p>2.2. Root Control NFT ownership grants only the authority supported by the associated contracts. Subdomain NFT ownership grants rights for that NFT. LOCKED restricts certain permanent Portal parameters; it does not cancel all owner powers.</p>
+          </section>
+          <section class="legal-section" id="en-terms-3"><h2>3. Purchasing from independent Portals</h2>
+            <p>3.1. Before buying, verify the parent .ton domain, name, seller, price, recipient, Registrar status and any separate terms published by the Portal owner.</p>
+            <p>3.2. When buying from a Portal owned by someone else, even if listed in the same Factory, this website only facilitates the technical transaction. We cannot guarantee the external domain infrastructure, the owner’s future conduct or the quality of their services. The third-party operator may impose separate terms.</p>
+            <p>3.3. A separate risk notice appears before submitting a purchase in an external Portal. Always review the wallet transaction as well.</p>
+          </section>
+          <section class="legal-section" id="en-terms-4"><h2>4. Fees and royalties</h2>
+            <p>4.1. The buyer funds the displayed purchase price, contract fees and network costs. Factory's primary-sale commission is distinct from royalties on secondary sales.</p>
+            <p>4.2. For Subdomain NFT resales, royalty may combine Factory and Registrar shares. The current contract settings determine the aggregate rate; existing marketplace listings may retain an earlier snapshot. Root Control NFT resale has a separate Factory royalty. Independent marketplaces may ignore royalties. Always check current on-chain parameters.</p>
+          </section>
+          <section class="legal-section" id="en-terms-5"><h2>5. DNS records and renewals</h2>
+            <p>5.1. Subject to the NFT and contract permissions, the interface supports Wallet Record, TON Site, TON Storage, Text Record, Hosting and renewal of a parent .ton domain.</p>
+            <p>5.2. Incorrect DNS records can redirect a domain or interrupt services. Renewal timing, fees and expiration are controlled by TON DNS and the relevant contracts. A Root Control NFT does not replace the original TON DNS NFT; Vault and Registrar state matter.</p>
+          </section>
+          <section class="legal-section" id="en-terms-6"><h2>6. Risks and refunds</h2>
+            <p>6.1. Confirmed blockchain transactions are generally irreversible. Errors in names, addresses, values or Portal selection can cause irreversible losses. Refunds occur only where provided by the contract or mandatory law.</p>
+            <p>6.2. The Service is provided 'as is' to the extent allowed by law, without warranties of NFT value, profit, continuous availability, or performance of independent Portals and marketplaces. Nothing here excludes liability that mandatory law does not allow to be excluded.</p>
+          </section>
+          <section class="legal-section" id="en-terms-7"><h2>7. Acceptance and updates</h2>
+            <p>7.1. Before the first paid operation and again after a document revision, users must explicitly accept these Terms. Declining stops the purchase before wallet signing.</p>
+            <p>7.2. The decision is recorded for the wallet in a database namespace separate from BAGID. Renaming this website does not change independent Portal owners or on-chain rights.</p>
+          </section>
+        </div>
+        <nav class="legal-toc"><p class="legal-toc-title">Contents</p>
+          <a href="#en-terms-1">1. About the Service</a>
+          <a href="#en-terms-2">2. Wallets and authority</a>
+          <a href="#en-terms-3">3. Purchasing from independent Portals</a>
+          <a href="#en-terms-4">4. Fees and royalties</a>
+          <a href="#en-terms-5">5. DNS records and renewals</a>
+          <a href="#en-terms-6">6. Risks and refunds</a>
+          <a href="#en-terms-7">7. Acceptance and updates</a>
+        </nav>
+      </div>
+    </article>
+    <footer class="legal-footer"><span data-legal-project-name></span> · Terms of Use · TON DNS</footer>
+  </main>
+  <script type="module" src="assets/js/legal.js?v=1.0.106"></script>
+</body>
+</html>
