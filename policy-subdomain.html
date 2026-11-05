@@ -1,4 +1,4 @@
-<!-- Назначение файла: самостоятельный юридический документ режима SUBDOMAIN; две языковые версии и название проекта из базы данных. -->
+<!-- Назначение файла: самостоятельный юридический документ режима SUBDOMAIN; две языковые версии, полное имя сервиса из .env и отдельное юридическое имя. -->
 <!doctype html>
 <html lang="ru">
 <head>
@@ -7,27 +7,28 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#030b17">
   <title>Политика конфиденциальности</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0.106">
-  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.106">
-  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.106">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0.199">
+  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.199">
+  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.199">
 </head>
-<body class="legal-page" data-site-mode="subdomain" data-legal-revision="1.0" data-title-ru="Политика конфиденциальности — {projectName}" data-title-en="Privacy Policy — {projectName}">
+<body class="legal-page" data-site-mode="subdomain" data-legal-revision="1.3" data-title-ru="Политика конфиденциальности — {projectName}" data-title-en="Privacy Policy — {projectName}">
   <!-- Шапка позволяет переключить язык, открыть второй документ и вернуться в интерфейс. -->
   <main class="legal-shell">
     <header class="legal-topbar">
-      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.0" data-revision-en="Revision 1.0">Редакция 1.0</span><a class="legal-brand" href="./" data-legal-project-name-aria><span class="legal-brand-name" data-legal-project-name></span></a></div>
+      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.3" data-revision-en="Revision 1.3">Редакция 1.3</span><a class="legal-brand" href="./" data-service-project-name-aria><span class="legal-brand-name" data-service-project-name></span></a></div>
       <span class="legal-topbar-spacer"></span>
       <a class="legal-link" href="terms-subdomain.html">Terms</a>
-      <a class="legal-link" href="./">← SUBDOMAIN</a>
+      <a class="legal-link" href="./">← <span data-service-project-name></span></a>
+      <a class="legal-link" href="cookies-subdomain.html">Cookies</a>
       <button class="legal-language-toggle" type="button" data-legal-language-toggle>EN</button>
     </header>
     <!-- Языковой блок RU: содержание и нумерованное оглавление документа. -->
     <article class="legal-language" data-legal-language="RU">
       <section class="legal-hero legal-hero-privacy">
-        <p class="legal-kicker"><span data-legal-project-name></span> · Privacy Policy</p>
+        <p class="legal-kicker"><span data-service-project-name></span> · Privacy Policy</p>
         <h1>Политика конфиденциальности</h1>
-        <p class="legal-lead">Как агрегатор SUBDOMAIN обрабатывает данные кошелька, доменов и технические сведения.</p>
-        <div class="legal-meta"><span class="legal-chip">Редакция 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+        <p class="legal-lead">Как агрегатор <span data-service-project-name></span> обрабатывает данные кошелька, доменов и технические сведения.</p>
+        <div class="legal-meta"><span class="legal-chip">Редакция 1.3</span><span class="legal-chip">04.11.2026</span><span class="legal-chip">Factory V70 · Registrar V48</span></div>
       </section>
       <div class="legal-notice legal-notice-ok">Внимание: TON — публичный блокчейн. Адрес кошелька и записи DNS могут быть доступны третьим лицам.</div>
       <div class="legal-layout">
@@ -45,12 +46,17 @@
           </section>
           <section class="legal-section" id="ru-privacy-4"><h2>4. Что мы не запрашиваем</h2>
             <p>4.1. Для базового входа не требуются ФИО, номер телефона и пароль. Сервис не запрашивает seed-фразы, приватные ключи или секретные файлы кошельков. Не вводите их на страницах, имитирующих наш интерфейс.</p>
+            <p>4.2. Для проверки покупки Сервис и контракты используют публичные сведения о родительском NFT, владельце, Vault и статусе LOST. Защита сессии и персональных данных не является гарантией сохранения домена или работоспособности DNS. NFT и его публичные записи могут сохраниться после утраты функциональности имени.</p>
+            <p>4.3. Порядок проверки Vault, отклонения покупки и возврата, последствия утраты родительского домена и возможность продления любым пользователем описаны в <a href="terms-subdomain.html#ru-terms-5">разделах 5–6 Условий использования</a>. Эта Политика регулирует обработку данных и не отменяет обязательные права пользователя.</p>
           </section>
           <section class="legal-section" id="ru-privacy-5"><h2>5. Для чего используются данные</h2>
             <p>5.1. Данные необходимы для подтверждения сессии, показа принадлежащих NFT, безопасного выбора Registrar, выполнения запросов к контрактам, расследования ошибок и предотвращения злоупотреблений. Принятие условий и его дата сохраняются отдельно от режима BAGID.</p>
           </section>
           <section class="legal-section" id="ru-privacy-6"><h2>6. Сроки хранения и права</h2>
             <p>6.1. Служебные записи хранятся столько, сколько требуется для работы функций, аудита операций, безопасности и выполнения применимых обязанностей. Публичные блокчейн-записи не могут быть удалены оператором сайта. Вопросы об обработке данных можно направлять через опубликованные на сайте контакты поддержки, если они доступны.</p>
+          
+            <p>После успешного входа в отдельный защищённый журнал MySQL записываются IP, время входа и внутренний ID пользователя. Запись нужна для защиты и расследования злоупотреблений, не публикуется и автоматически очищается через <span data-legal-privacy-field="ipDays">30</span> дней. Запись не используется для рекламного профилирования.</p><p>Сессия действует до выхода или установленного срока, максимум 30 дней. Просроченные сессии и одноразовые коды TON Proof очищаются автоматически. Профиль, связь с кошельком, доменные и операционные записи нужны, пока обслуживается учётная запись, сохраняются права или требуется аудит либо выполнение законной обязанности. Данные журналов Apache, прокси и резервных копий имеют отдельные сроки у оператора.</p><p>Оператор обрабатывает данные для предоставления запрошенных функций, защиты сервиса и исполнения обязательных требований. При применении GDPR основаниями могут служить исполнение договора, законный интерес в безопасности после оценки необходимости и баланса интересов, либо правовая обязанность. Для необязательного хранения в браузере применяется отдельный выбор.</p><p>Можно обратиться за доступом к контролируемым оператором данным, исправлением, ограничением или удалением, а также заявить возражение и обратиться к надзорному органу, если применимо. Для проверки владельца оператор может запросить доказательство владения кошельком. Seed-фраза и приватный ключ не нужны.</p><p data-privacy-operator-card hidden>Оператор: <strong data-legal-privacy-field="operatorName"></strong>. <span data-legal-privacy-field="operatorAddress"></span> <a data-privacy-contact hidden></a></p><p><a href="cookies-subdomain.html#ru-cookies-4">Cookies</a></p>
+          <p>Токен и мобильные реквизиты обычного входа хранятся во вкладке и действуют до выхода или окончания серверной сессии. Если при входе пользователь отдельно выбирает запоминание, браузер сохраняет реквизиты на срок до 30 дней. Опциональная cookie входа может устанавливаться только при этом выборе. Язык сохраняется между визитами после выбора пользователем.</p>
           </section>
           <section class="legal-section" id="ru-privacy-7"><h2>7. Изменения</h2>
             <p>7.1. Текущая редакция размещена на этой странице. При существенных изменениях условий покупки интерфейс запросит повторное согласие до новой платной операции.</p>
@@ -70,10 +76,10 @@
     <!-- Языковой блок EN: содержание и нумерованное оглавление документа. -->
     <article class="legal-language" data-legal-language="EN" hidden>
       <section class="legal-hero legal-hero-privacy">
-        <p class="legal-kicker"><span data-legal-project-name></span> · Privacy Policy</p>
+        <p class="legal-kicker"><span data-service-project-name></span> · Privacy Policy</p>
         <h1>Privacy Policy</h1>
-        <p class="legal-lead">How the SUBDOMAIN aggregator processes wallet, domain and technical information.</p>
-        <div class="legal-meta"><span class="legal-chip">Revision 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+        <p class="legal-lead">How the <span data-service-project-name></span> aggregator processes wallet, domain and technical information.</p>
+        <div class="legal-meta"><span class="legal-chip">Revision 1.3</span><span class="legal-chip">04.11.2026</span><span class="legal-chip">Factory V70 · Registrar V48</span></div>
       </section>
       <div class="legal-notice legal-notice-ok">Important: TON is public. Wallet addresses and DNS records may be visible to third parties.</div>
       <div class="legal-layout">
@@ -91,12 +97,17 @@
           </section>
           <section class="legal-section" id="en-privacy-4"><h2>4. Data we do not request</h2>
             <p>4.1. Basic wallet login does not require a legal name, phone number or password. We do not ask for wallet recovery phrases, private keys or secret key files. Never enter them into imitations of this interface.</p>
+            <p>4.2. Purchase checks use public information about the parent NFT, its owner, Vault and LOST state. Session and personal-data safeguards are not a guarantee of parent-domain custody or working DNS. An NFT and its public records may remain after the name loses functionality.</p>
+            <p>4.3. Vault verification, purchase rejection and refunds, consequences of parent-domain loss and renewal by any user are described in <a href="terms-subdomain.html#en-terms-5">sections 5–6 of the Terms of Use</a>. This Policy governs data processing and does not waive mandatory user rights.</p>
           </section>
           <section class="legal-section" id="en-privacy-5"><h2>5. Purposes</h2>
             <p>5.1. We use technical data to maintain sessions, show owned NFTs, validate Registrar selection, interact with smart contracts, diagnose faults and prevent abuse. Acceptance records are stored separately from those for BAGID mode.</p>
           </section>
           <section class="legal-section" id="en-privacy-6"><h2>6. Retention and requests</h2>
             <p>6.1. Technical records are kept as required for functions, security, audits and applicable obligations. Website operators cannot erase independent blockchain records. Where contact details are available, privacy requests may be sent through the published support channel.</p>
+          
+            <p>After successful sign-in, a restricted MySQL log records the IP address, sign-in time and internal user ID for security and abuse investigations. The record is not public and is purged after <span data-legal-privacy-field="ipDays">30</span> days. It is excluded from advertising profiling.</p><p>A session is valid until sign-out or expiry, for up to 30 days. Expired sessions and single-use TON Proof challenges are purged automatically. Profile, wallet, domain and operational records are kept while the account is serviced, rights persist, or audit and legal duties require them. Apache logs, proxy logs and backups have separate operator retention schedules.</p><p>The operator processes data to provide requested features, protect the service and meet legal obligations. Where GDPR applies, the bases may include performance of a contract, legitimate interests in security after a necessity and balancing assessment, or a legal obligation. Optional browser storage requires a separate choice.</p><p>Where applicable, you can request access, correction, restriction or erasure of data controlled by the operator, object to processing, and complain to a supervisory authority. The operator may verify wallet ownership for your request. A seed phrase or private key is unnecessary.</p><p data-privacy-operator-card hidden>Operator: <strong data-legal-privacy-field="operatorName"></strong>. <span data-legal-privacy-field="operatorAddress"></span> <a data-privacy-contact hidden></a></p><p><a href="cookies-subdomain.html#en-cookies-4">Cookies</a></p>
+          <p>A standard sign-in token and mobile credentials stay in tab storage and work until sign-out or server-session expiry. If the user separately chooses to remember sign-in, the browser keeps the credentials for up to 30 days. The optional sign-in cookie can be set only with that choice. The selected language is remembered between visits.</p>
           </section>
           <section class="legal-section" id="en-privacy-7"><h2>7. Changes</h2>
             <p>7.1. The current revision is published here. Updated purchase terms require a new explicit acceptance before another paid action.</p>
@@ -115,6 +126,6 @@
     </article>
     <footer class="legal-footer"><span data-legal-project-name></span> · Privacy Policy · TON DNS</footer>
   </main>
-  <script type="module" src="assets/js/legal.js?v=1.0.106"></script>
+  <script type="module" src="assets/js/legal.js?v=1.0.199"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!-- Назначение файла: самостоятельный юридический документ режима SUBDOMAIN; две языковые версии и название проекта из базы данных. -->
+<!-- Назначение файла: самостоятельный юридический документ режима SUBDOMAIN; две языковые версии, полное имя сервиса из .env и отдельное юридическое имя. -->
 <!doctype html>
 <html lang="ru">
 <head>
@@ -7,38 +7,39 @@
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#030b17">
   <title>Условия использования</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0.106">
-  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.106">
-  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.106">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0.199">
+  <link rel="stylesheet" href="assets/css/bagid-main.css?v=1.0.199">
+  <link rel="stylesheet" href="assets/css/legal.css?v=1.0.199">
 </head>
-<body class="legal-page" data-site-mode="subdomain" data-legal-revision="1.0" data-title-ru="Условия использования — {projectName}" data-title-en="Terms of Use — {projectName}">
+<body class="legal-page" data-site-mode="subdomain" data-terms-version="2026-11-04-r5" data-legal-revision="1.4" data-title-ru="Условия использования — {projectName}" data-title-en="Terms of Use — {projectName}">
   <!-- Шапка позволяет переключить язык, открыть второй документ и вернуться в интерфейс. -->
   <main class="legal-shell">
     <header class="legal-topbar">
-      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.0" data-revision-en="Revision 1.0">Редакция 1.0</span><a class="legal-brand" href="./" data-legal-project-name-aria><span class="legal-brand-name" data-legal-project-name></span></a></div>
+      <div class="legal-brand-block"><span class="legal-revision" data-revision-ru="Редакция 1.4" data-revision-en="Revision 1.4">Редакция 1.4</span><a class="legal-brand" href="./" data-service-project-name-aria><span class="legal-brand-name" data-service-project-name></span></a></div>
       <span class="legal-topbar-spacer"></span>
       <a class="legal-link" href="policy-subdomain.html">Privacy</a>
-      <a class="legal-link" href="./">← SUBDOMAIN</a>
+      <a class="legal-link" href="./">← <span data-service-project-name></span></a>
+      <a class="legal-link" href="cookies-subdomain.html">Cookies</a>
       <button class="legal-language-toggle" type="button" data-legal-language-toggle>EN</button>
     </header>
     <!-- Языковой блок RU: содержание и нумерованное оглавление документа. -->
     <article class="legal-language" data-legal-language="RU">
       <section class="legal-hero legal-hero-terms">
-        <p class="legal-kicker"><span data-legal-project-name></span> · Terms of Use</p>
+        <p class="legal-kicker"><span data-service-project-name></span> · Terms of Use</p>
         <h1>Условия использования</h1>
         <p class="legal-lead">Управление .ton-доменами, DNS и покупками NFT-субдоменов в независимых Portal.</p>
-        <div class="legal-meta"><span class="legal-chip">Редакция 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+        <div class="legal-meta"><span class="legal-chip">Редакция 1.4</span><span class="legal-chip">04.11.2026</span><span class="legal-chip">Factory V70 · Registrar V48</span></div>
       </section>
       <div class="legal-notice legal-notice-danger">Внимание: каждый Portal имеет своего владельца и собственные риски. Проверяйте выбранный родительский домен и транзакцию перед подписью.</div>
       <div class="legal-layout">
         <div class="legal-document">
           <section class="legal-section" id="ru-terms-1"><h2>1. Что представляет собой сервис</h2>
             <p>1.1. Сервис <span data-legal-project-name></span> — интерфейс к сети TON для просмотра каталога родительских доменов Factory, покупки NFT-субдоменов у отдельных Portal и управления принадлежащими пользователю TON DNS-записями. Это не банк, гарант сделок и не единый продавец всех NFT.</p>
-            <p>1.2. Factory объединяет Registrar-контракты разных родительских .ton-доменов. У каждого Portal собственный владелец Root Control NFT (либо предусмотренный on-chain управляющий), собственные цены, правила продажи и технические решения. Отображение Portal в Factory не означает проверку надёжности владельца или гарантию качества его услуг.</p>
-          </section>
+            <p>1.2. Factory объединяет Registrar-контракты разных родительских .ton-доменов. У каждого Portal собственный владелец TON DNS CONTROL (либо предусмотренный on-chain управляющий), собственные цены, правила продажи и технические решения. Отображение Portal в Factory не означает проверку надёжности владельца или гарантию качества его услуг.</p>
+          <p>Режим SUBDOMAIN использует подтверждённый кошелёк для покупки NFT, операций DNS и продления домена. Правила технического хранения описаны в <a href="cookies-subdomain.html#ru-cookies-2">Cookies</a>. Обращения о незаконном содержимом, работе каталога или ограничении доступа направляются оператору по контактам в <a href="policy-subdomain.html#ru-privacy-6">Политике конфиденциальности</a>.</p></section>
           <section class="legal-section" id="ru-terms-2"><h2>2. Кошелёк, полномочия и подтверждение</h2>
             <p>2.1. Авторизация выполняется через подтверждение контроля кошелька TON. Сервис не запрашивает seed-фразу или приватный ключ. Покупки, изменения DNS, продление и другие платные операции подтверждаются пользователем в кошельке.</p>
-            <p>2.2. Владение Root Control NFT определяет полномочия над соответствующим Portal в пределах смарт-контрактов; владение отдельным Subdomain NFT даёт права только на соответствующий NFT и предусмотренные записи. LOCKED ограничивает изменения неизменяемых параметров Portal; не следует путать это с отменой всех прав владельца.</p>
+            <p>2.2. Владение TON DNS CONTROL определяет полномочия над соответствующим Portal в пределах смарт-контрактов; владение отдельным Subdomain NFT даёт права только на соответствующий NFT и предусмотренные записи. LOCKED ограничивает изменения неизменяемых параметров Portal; не следует путать это с отменой всех прав владельца.</p>
           </section>
           <section class="legal-section" id="ru-terms-3"><h2>3. Покупка и независимые владельцы Portal</h2>
             <p>3.1. При покупке субдомена пользователь самостоятельно выбирает родительский .ton-домен, имя, продавца и проверяет отображённую сумму, адрес получателя, состояние Registrar и дополнительные требования владельца Portal.</p>
@@ -48,11 +49,19 @@
           <section class="legal-section" id="ru-terms-4"><h2>4. Оплата, комиссии и royalty</h2>
             <p>4.1. Пользователь оплачивает стоимость субдомена, комиссии и сетевые расходы, отображённые при подтверждении. При первичной покупке Factory удерживает предусмотренную контрактом комиссию; она отличается от royalty вторичного рынка.</p>
             <p>4.2. При перепродаже Subdomain NFT royalty может состоять из двух долей: Factory и Registrar. Их суммарная ставка отображается в параметрах соответствующего Portal и может обновляться по правилам контрактов. Существующие листинги NFT на сторонних площадках могут сохранять ранее записанные ставки.</p>
-            <p>4.3. При перепродаже Root Control NFT действует отдельная ставка royalty Factory. Marketplace может не поддерживать или не применять royalty; Сервис не гарантирует поступление вознаграждения от независимой площадки. Конкретные ставки уточняются в текущем on-chain состоянии перед операцией.</p>
+            <p>4.3. При перепродаже TON DNS CONTROL действует отдельная ставка royalty Factory. Marketplace может не поддерживать или не применять royalty; Сервис не гарантирует поступление вознаграждения от независимой площадки. Конкретные ставки уточняются в текущем on-chain состоянии перед операцией.</p>
           </section>
           <section class="legal-section" id="ru-terms-5"><h2>5. DNS-записи и продление родительского домена</h2>
             <p>5.1. Интерфейс позволяет в пределах действующих прав записывать или очищать Wallet Record, TON Site, TON Storage, Text Record, настройки Hosting, а также инициировать поддерживаемое продление родительского .ton-домена.</p>
-            <p>5.2. Некорректные записи могут перенаправить домен на посторонний ресурс, нарушить работу сайта или доступ к имени. Сроки продления, расчёт комиссий и судьба истёкшего домена зависят от TON DNS и соответствующих контрактов. ROOT CONTROL не подменяет собой исходный TON DNS NFT: права определяются актуальным состоянием Vault, Registrar и Root Control.</p>
+            <p>5.2. Некорректные записи могут перенаправить домен на посторонний ресурс, нарушить работу сайта или доступ к имени. Сроки продления, расчёт комиссий и судьба истёкшего домена зависят от TON DNS и соответствующих контрактов. TON DNS CONTROL не подменяет собой исходный TON DNS NFT: права определяются актуальным состоянием Vault, Registrar и TON DNS CONTROL.</p>
+            <p>5.3. <strong>Перед выпуском каждого нового субдомена Factory запускает on-chain проверку того, что канонический NFT родительского .ton-домена по-прежнему принадлежит соответствующему Vault.</strong> TON DNS CONTROL NFT управляет этой связкой; сам родительский NFT хранится на адресе Vault. Выпуск допускается только после предусмотренного контрактом положительного результата проверки. Это проверка для конкретной покупки, а не непрерывный мониторинг и не гарантия сохранения домена в будущем.</p>
+            <p>5.4. Если проверка подтверждает утрату родительского домена, новая покупка отклоняется, а Factory запускает переход соответствующего Portal, TON DNS CONTROL, Registrar и Vault в <strong>LOST</strong>. Продажи этой связки прекращаются; другие независимые Portal не блокируются. Если LOST уже зафиксирован, повторная штатная покупка отклоняется без нового выпуска NFT.</p>
+            <p>5.5. <strong>При предусмотренном контрактом отклонении незавершённой покупки покупателю возвращаются полная цена имени и неиспользованный технический остаток; уже потраченные сетевые комиссии и gas не возвращаются.</strong> Комиссия платформы 3% и доля получателя доходов 97% распределяются только после успешного выпуска. Штатная покупка, отклонённая после уже установленного LOST, возвращает оставшееся приложенное значение через предусмотренный bounce-механизм. Подтверждение отправки в кошельке не равно подтверждению успешного выпуска; обработка и отображение результата зависят от включения сообщений в блокчейн.</p>
+            <p>5.6. <strong>Ранее выпущенные NFT субдоменов не удаляются из блокчейна из-за утраты родительского домена.</strong> Однако связь имён с TON DNS может прекратиться, в том числе необратимо: NFT может остаться коллекционным объектом с изображением и сохранёнными данными, но перестать обеспечивать работу соответствующего субдомена, Wallet Record, TON Site, TON Storage или Text Record через это имя. Сохранение NFT, записей или изображения само по себе не подтверждает работоспособность имени. Передача домена новому владельцу или создание нового Registrar не гарантируют восстановление ранее выпущенных субдоменов.</p>
+            <p>5.7. Родительский .ton-домен может быть утрачен, в частности из-за непродления и предусмотренного TON DNS повторного аукциона. Владелец TON DNS CONTROL должен следить за сроком и состоянием домена. LOCK, ограничения вывода и проверки покупки предусмотрены для защиты связки, но <strong>сами по себе не обеспечивают бессрочное продление и не исключают все технические, протокольные и пользовательские риски</strong>. Наличие защищённого Vault не является обещанием бессрочного владения или абсолютной безопасности.</p>
+            <p>5.8. Пока родительский домен сохраняется за соответствующим Vault и операция допустима контрактом, <strong>любой пользователь может оплатить permissionless-продление через предусмотренный механизм Vault</strong>, включая человека без TON DNS CONTROL и без приобретённых субдоменов. Перед отправкой следует проверить текущий адрес Vault, сумму и назначение платежа. Такое продление не передаёт плательщику права собственности или управления. Возможность продления третьим лицом не гарантирует, что кто-либо продлит домен; платёж после фактической утраты не является способом вернуть домен или восстановить LOST Portal.</p>
+            <p>5.9. Принимая Условия и подтверждая покупку, пользователь подтверждает ознакомление с описанной механикой, её ограничениями и риском утраты функциональности и стоимости субдомена. Пользователь самостоятельно принимает решение и <strong>несёт связанные с ним технические и экономические риски в пределах, допускаемых применимым законодательством</strong>. Защитные проверки не означают гарантии отсутствия ошибок или сохранения домена при любых обстоятельствах. Возврат отклонённой покупки не является выкупом ранее выпущенных NFT: последующая утрата родительского домена сама по себе не запускает автоматический возврат их прежней покупной цены. Обязательные права пользователя и ответственность, которую закон запрещает исключать, сохраняются.</p>
+            <p>5.10. В новых Portal Registrar V48 запускает продление родительского домена после успешной покупки. Условия, технический бюджет, возвраты и отличие от ранее созданных V46 подробно описаны в разделе 8. Без новых покупок автоматического продления нет; сохраняется отдельное permissionless-продление при допустимом состоянии Vault.</p>
           </section>
           <section class="legal-section" id="ru-terms-6"><h2>6. Риски и возвраты</h2>
             <p>6.1. Подписанные и подтверждённые в блокчейне транзакции обычно необратимы. Ошибка в адресе, имени, комиссии или выбранном Portal может привести к безвозвратным расходам. Возврат возможен только по предусмотренному смарт-контрактом сценарию либо если того требует обязательное законодательство.</p>
@@ -63,6 +72,26 @@
             <p>7.1. Перед первой платной операцией, а затем при изменении редакции, Сервис запрашивает явное принятие этих Условий. Отказ отменяет платную операцию до открытия подписи транзакции.</p>
             <p>7.2. Решение о принятии хранится для кошелька в базе отдельно от режима BAGID. Изменение названия проекта в тексте не меняет указанные on-chain права и обязанности независимых владельцев Portal.</p>
           </section>
+
+          <!-- Раздел 8 описывает действующие версии Registrar; неизменяемость кода не отменяет разрешённое управление Portal. -->
+          <section class="legal-section" id="ru-terms-8">
+            <h2>8. Registrar V46 и V48: версии и продление домена</h2>
+            <p>8.1. <strong>Версия Registrar относится к конкретному Portal, а не ко всему сайту.</strong> В каталоге одной Factory V70 могут одновременно работать ранее созданные Registrar V46 и новые Registrar V48. Выбор другого родительского домена может означать выбор другой версии. Проверяйте фактический on-chain Registrar выбранного домена перед покупкой.</p>
+            <p>8.2. Обе версии проверяют принадлежность канонического NFT родительского домена Vault перед выпуском нового субдомена через протокол Factory. Подтверждённая утрата запускает LOST для соответствующего Portal. V48 сохраняет эту защиту и дополнительно включает следующие изменения:</p>
+            <table class="legal-table"><thead><tr><th>Возможность</th><th>Registrar V46</th><th>Registrar V48</th></tr></thead><tbody>
+              <tr><td>Продление родительского .ton-домена при покупке</td><td>Покупка сама по себе не продлевает домен; требуется отдельное продление.</td><td>После успешной покупки запускается продление через существующий Vault.</td></tr>
+              <tr><td>Контекст возврата средств при продлении</td><td>Нет цепочки автоматического продления при покупке.</td><td>Запрос связан с исходной покупкой и плательщиком; последующая передача NFT не меняет адрес возврата её остатка. Повторное подтверждение расчёта не оплачивает продление повторно.</td></tr>
+              <tr><td>Технический бюджет продления</td><td>Не применяется к покупке.</td><td>Необходимые расходы на продление и сообщения между контрактами учтены в техническом бюджете покупки.</td></tr>
+            </tbody></table>
+            <p>8.3. <strong>В Factory V70 новые Portal используют Registrar V48.</strong> Создание новых Portal с Registrar V46 в этой Factory больше не поддерживается. V48 включает продление родительского домена после успешной покупки и учитывает необходимые технические расходы.</p>
+            <p>8.4. Ранее созданные Registrar V46 продолжают работать на своём неизменяемом коде и не получают новые функции V48 автоматически. Владелец и управляющие сохраняют предусмотренные контрактами права, включая включение/выключение продаж и изменение разрешённых настроек; LOST прекращает работу соответствующей связки. Неизменяемость кода не означает невозможность остановить продажи. Запрет на создание новых Portal в Factory сам по себе не останавливает продажи уже существующих Registrar.</p>
+            <p>8.5. В V48 продление запускается <strong>после положительной проверки custody, успешного выпуска NFT и подтверждения расчёта покупки</strong>. При отклонении до успешной регистрации продление не оплачивается, цена имени не распределяется по схеме 3%/97%; действует предусмотренный контрактом возврат за вычетом потраченных сетевых расходов. При успешной покупке 3%/97% рассчитываются от цены имени; отдельный технический бюджет покрывает продление и сообщения. Предусмотренный платёж в родительский TON DNS NFT составляет 0.015 GRAM; общий прикладываемый запас определяется актуальными параметрами контрактов, а неизрасходованный возвращается исходному плательщику по протоколу.</p>
+            <p>8.6. Пользователь подтверждает покупку один раз в своём кошельке. Продление после успешной покупки не требует от него отдельной подписи. Подтверждение транзакции кошельком само по себе ещё не означает завершение всех сообщений в блокчейне.</p>
+            <p>8.7. Продление обновляет время последнего продления по правилам канонического TON DNS, <strong>а не прибавляет по году к сроку за каждую покупку</strong>. Несколько покупок подряд не создают запас лет. При отсутствии покупок автоматические сообщения не возникают; владелец должен следить за сроком и при необходимости продлевать домен отдельно. Permissionless-продление доступно любому пользователю, включая тех, кто не покупал субдомены. Автоматическое продление не гарантирует бессрочное сохранение домена и не устраняет риски, описанные в настоящих Условиях.</p>
+            <p>8.8. Настоящее сравнение описывает V46 и V48; позднейшие версии могут иметь другие параметры. Обновление сайта само по себе не изменяет код ранее созданного Registrar. Решение о покупке принимается с учётом версии, состояния и рисков выбранного Portal.</p>
+          </section>
+
+
         </div>
         <nav class="legal-toc"><p class="legal-toc-title">Содержание</p>
           <a href="#ru-terms-1">1. Что представляет собой сервис</a>
@@ -71,28 +100,28 @@
           <a href="#ru-terms-4">4. Оплата, комиссии и royalty</a>
           <a href="#ru-terms-5">5. DNS-записи и продление родительского домена</a>
           <a href="#ru-terms-6">6. Риски и возвраты</a>
-          <a href="#ru-terms-7">7. Редакция и согласие</a>
+          <a href="#ru-terms-7">7. Редакция и согласие</a><a href="#ru-terms-8">8. Registrar V46 / V48</a>
         </nav>
       </div>
     </article>
     <!-- Языковой блок EN: содержание и нумерованное оглавление документа. -->
     <article class="legal-language" data-legal-language="EN" hidden>
       <section class="legal-hero legal-hero-terms">
-        <p class="legal-kicker"><span data-legal-project-name></span> · Terms of Use</p>
+        <p class="legal-kicker"><span data-service-project-name></span> · Terms of Use</p>
         <h1>Terms of Use</h1>
         <p class="legal-lead">Manage .ton domains, DNS and NFT subdomain purchases across independent Portals.</p>
-        <div class="legal-meta"><span class="legal-chip">Revision 1.0</span><span class="legal-chip">18.10.2026</span><span class="legal-chip">Factory V66 · Registrar V43</span></div>
+        <div class="legal-meta"><span class="legal-chip">Revision 1.4</span><span class="legal-chip">04.11.2026</span><span class="legal-chip">Factory V70 · Registrar V48</span></div>
       </section>
       <div class="legal-notice legal-notice-danger">Important: each Portal has an independent owner and its own risks. Verify the parent domain and transaction before signing.</div>
       <div class="legal-layout">
         <div class="legal-document">
           <section class="legal-section" id="en-terms-1"><h2>1. About the Service</h2>
             <p>1.1. <span data-legal-project-name></span> is a TON interface for browsing parent domains in the Factory directory, purchasing NFT subdomains from individual Portals and managing TON DNS records for assets you own. It is not a bank, escrow agent or a universal seller of all NFTs.</p>
-            <p>1.2. Factory lists Registrar contracts belonging to different parent .ton domains. Each Portal has its own Root Control NFT owner (or authorized on-chain manager), pricing and services. Inclusion in Factory does not certify the owner's reliability or guarantee third-party performance.</p>
-          </section>
+            <p>1.2. Factory lists Registrar contracts belonging to different parent .ton domains. Each Portal has its own TON DNS CONTROL owner (or authorized on-chain manager), pricing and services. Inclusion in Factory does not certify the owner's reliability or guarantee third-party performance.</p>
+          <p>SUBDOMAIN mode uses a verified wallet for NFT purchases, DNS operations and domain renewals. Browser storage is described in <a href="cookies-subdomain.html#en-cookies-2">Cookies</a>. Reports concerning unlawful content, the catalogue or restrictions may be sent to the operator using the contact in the <a href="policy-subdomain.html#en-privacy-6">Privacy Policy</a>.</p></section>
           <section class="legal-section" id="en-terms-2"><h2>2. Wallets and authority</h2>
             <p>2.1. Login uses proof of control of a TON wallet. We never request a recovery phrase or private key. You approve purchases, DNS updates, renewal and other paid transactions inside your wallet.</p>
-            <p>2.2. Root Control NFT ownership grants only the authority supported by the associated contracts. Subdomain NFT ownership grants rights for that NFT. LOCKED restricts certain permanent Portal parameters; it does not cancel all owner powers.</p>
+            <p>2.2. TON DNS CONTROL ownership grants only the authority supported by the associated contracts. Subdomain NFT ownership grants rights for that NFT. LOCKED restricts certain permanent Portal parameters; it does not cancel all owner powers.</p>
           </section>
           <section class="legal-section" id="en-terms-3"><h2>3. Purchasing from independent Portals</h2>
             <p>3.1. Before buying, verify the parent .ton domain, name, seller, price, recipient, Registrar status and any separate terms published by the Portal owner.</p>
@@ -101,11 +130,19 @@
           </section>
           <section class="legal-section" id="en-terms-4"><h2>4. Fees and royalties</h2>
             <p>4.1. The buyer funds the displayed purchase price, contract fees and network costs. Factory's primary-sale commission is distinct from royalties on secondary sales.</p>
-            <p>4.2. For Subdomain NFT resales, royalty may combine Factory and Registrar shares. The current contract settings determine the aggregate rate; existing marketplace listings may retain an earlier snapshot. Root Control NFT resale has a separate Factory royalty. Independent marketplaces may ignore royalties. Always check current on-chain parameters.</p>
+            <p>4.2. For Subdomain NFT resales, royalty may combine Factory and Registrar shares. The current contract settings determine the aggregate rate; existing marketplace listings may retain an earlier snapshot. TON DNS CONTROL resale has a separate Factory royalty. Independent marketplaces may ignore royalties. Always check current on-chain parameters.</p>
           </section>
           <section class="legal-section" id="en-terms-5"><h2>5. DNS records and renewals</h2>
             <p>5.1. Subject to the NFT and contract permissions, the interface supports Wallet Record, TON Site, TON Storage, Text Record, Hosting and renewal of a parent .ton domain.</p>
-            <p>5.2. Incorrect DNS records can redirect a domain or interrupt services. Renewal timing, fees and expiration are controlled by TON DNS and the relevant contracts. A Root Control NFT does not replace the original TON DNS NFT; Vault and Registrar state matter.</p>
+            <p>5.2. Incorrect DNS records can redirect a domain or interrupt services. Renewal timing, fees and expiration are controlled by TON DNS and the relevant contracts. A TON DNS CONTROL does not replace the original TON DNS NFT; Vault and Registrar state matter.</p>
+            <p>5.3. <strong>Before minting each new subdomain, Factory starts an on-chain check that the canonical parent .ton domain NFT is still owned by the corresponding Vault.</strong> TON DNS CONTROL NFT governs that linked Portal; the parent NFT itself is held at the Vault address. Minting is permitted only after the positive result required by the contract. This check is specific to the purchase; it is not continuous monitoring or a guarantee of future custody.</p>
+            <p>5.4. If the check confirms loss of the parent domain, the new purchase is rejected and Factory starts the <strong>LOST</strong> transition for that Portal, TON DNS CONTROL, Registrar and Vault. Sales for that linked Portal stop; other independent Portals are not blocked. Once LOST has been recorded, another standard purchase is rejected without minting a new NFT.</p>
+            <p>5.5. <strong>When an unfinished purchase is rejected through the contract-defined path, the buyer receives the full name price and unused technical remainder; network fees and gas already spent are not refunded.</strong> The 3% platform fee and 97% revenue share are distributed only after successful minting. A standard purchase rejected after LOST has already been recorded returns the remaining attached value through the implemented bounce mechanism. Wallet submission confirmation is not mint confirmation; processing and display of the result depend on blockchain message inclusion.</p>
+            <p>5.6. <strong>Previously minted subdomain NFTs are not deleted from the blockchain because the parent domain is lost.</strong> However, the names may lose their TON DNS delegation, potentially permanently: an NFT may remain a collectible with an image and stored data while no longer providing a working subdomain, Wallet Record, TON Site, TON Storage or Text Record through that name. Continued existence of an NFT, its records or image does not establish that the name works. Transfer of the parent domain to a new owner or creation of a new Registrar does not guarantee restoration of previously minted subdomains.</p>
+            <p>5.7. The parent .ton domain may be lost, including through non-renewal and the re-auction process defined by TON DNS. The TON DNS CONTROL owner must monitor its term and state. LOCK, withdrawal restrictions and purchase checks are designed to protect the linked Portal, but <strong>do not by themselves ensure perpetual renewal or eliminate all technical, protocol and user risks</strong>. A protected Vault is not a promise of perpetual ownership or absolute security.</p>
+            <p>5.8. While the corresponding Vault retains the parent domain and the operation is permitted by the contract, <strong>any user may fund permissionless renewal through the implemented Vault mechanism</strong>, including someone who owns neither TON DNS CONTROL nor a subdomain. Before sending funds, verify the current Vault address, amount and payment purpose. Renewal does not grant the payer ownership or management authority. Permissionless renewal does not guarantee that anyone will renew the domain; payment after actual loss is not a means of recovering the domain or restoring a LOST Portal.</p>
+            <p>5.9. By accepting these Terms and confirming a purchase, the user acknowledges the disclosed operation, limitations and risk of loss of subdomain functionality and value. The user makes an independent decision and <strong>assumes its associated technical and economic risks to the extent permitted by applicable law</strong>. Protective checks do not guarantee error-free operation or preservation of the parent domain in all circumstances. A rejected-purchase refund is not a buyback of previously minted NFTs: subsequent loss of the parent domain does not itself trigger automatic repayment of their historical purchase prices. Mandatory user rights and liability that cannot lawfully be excluded remain unaffected.</p>
+            <p>5.10. In new Portals, Registrar V48 starts parent-domain renewal after a successful purchase. Section 8 explains the conditions, technical budget, refunds and differences from previously deployed V46 contracts. Without new purchases, no automatic renewal runs; separate permissionless renewal remains available when permitted by Vault state.</p>
           </section>
           <section class="legal-section" id="en-terms-6"><h2>6. Risks and refunds</h2>
             <p>6.1. Confirmed blockchain transactions are generally irreversible. Errors in names, addresses, values or Portal selection can cause irreversible losses. Refunds occur only where provided by the contract or mandatory law.</p>
@@ -115,6 +152,26 @@
             <p>7.1. Before the first paid operation and again after a document revision, users must explicitly accept these Terms. Declining stops the purchase before wallet signing.</p>
             <p>7.2. The decision is recorded for the wallet in a database namespace separate from BAGID. Renaming this website does not change independent Portal owners or on-chain rights.</p>
           </section>
+
+          <!-- Английский раздел 8 соответствует русскому сравнению версий и не обещает обновления существующих контрактов. -->
+          <section class="legal-section" id="en-terms-8">
+            <h2>8. Registrar V46 and V48: versions and domain renewal</h2>
+            <p>8.1. <strong>A Registrar version belongs to an individual Portal, not to the entire website.</strong> Previously deployed Registrar V46 contracts and newer Registrar V48 contracts may operate in the same Factory V70 catalogue. Selecting another parent domain may select another version. Check the selected domain’s actual on-chain Registrar before purchasing.</p>
+            <p>8.2. Both versions use the Factory protocol to check that the canonical parent-domain NFT belongs to the Vault before minting a new subdomain. Confirmed loss starts LOST for that Portal. V48 preserves this protection and additionally includes these changes:</p>
+            <table class="legal-table"><thead><tr><th>Feature</th><th>Registrar V46</th><th>Registrar V48</th></tr></thead><tbody>
+              <tr><td>Parent .ton-domain renewal on purchase</td><td>The purchase itself does not renew the domain; separate renewal is needed.</td><td>A successful purchase starts renewal through the existing Vault.</td></tr>
+              <tr><td>Renewal refund context</td><td>No automatic purchase-renewal chain.</td><td>The request is bound to the original purchase and payer; a later NFT transfer does not change the recipient of its remaining funds. Repeated settlement confirmation does not pay for renewal again.</td></tr>
+              <tr><td>Renewal technical budget</td><td>Not part of the purchase.</td><td>The technical purchase budget accounts for renewal costs and messages between the contracts.</td></tr>
+            </tbody></table>
+            <p>8.3. <strong>Factory V70 uses Registrar V48 for new Portals.</strong> New Portals with Registrar V46 are no longer supported by this Factory. V48 includes parent-domain renewal after a successful purchase and accounts for the required technical costs.</p>
+            <p>8.4. Previously created Registrar V46 contracts continue operating on their immutable code and do not automatically receive V48 features. Owners and managers retain the powers permitted by their contracts, including enabling/disabling sales and changing allowed settings; LOST stops the affected contract group. Immutable code does not mean sales cannot be paused. Disabling new Portal creation in Factory does not itself stop sales in existing Registrars.</p>
+            <p>8.5. V48 starts renewal <strong>after positive custody verification, successful NFT minting and purchase-settlement confirmation</strong>. Rejection before successful registration does not pay for renewal or distribute the name price through the 3%/97% split; the contract’s refund rules apply, with spent network costs deducted. For a successful purchase, the 3%/97% split applies to the name price; a separate technical budget covers renewal and messages. The specified payment to the parent TON DNS NFT is 0.015 GRAM; the total attached allowance depends on current contract parameters, and unused funds return to the original payer under the protocol.</p>
+            <p>8.6. The user confirms the purchase once in their own wallet. Renewal after a successful purchase does not require a separate signature from that user. Wallet transaction confirmation alone does not mean that every blockchain message has completed.</p>
+            <p>8.7. Renewal updates the last-renewal timestamp under canonical TON DNS rules; <strong>it does not add a year for each purchase</strong>. Several consecutive purchases do not accumulate years. Without purchases, no automatic messages run; the owner must monitor expiry and renew separately when needed. Permissionless renewal is available to anyone, including people who have never purchased a subdomain. Automatic renewal does not guarantee indefinite domain retention or remove the risks described in these Terms.</p>
+            <p>8.8. This comparison describes V46 and V48; later versions may have different parameters. Updating the website does not by itself change the code of an existing Registrar. Purchase decisions must take account of the selected Portal’s version, state and risks.</p>
+          </section>
+
+
         </div>
         <nav class="legal-toc"><p class="legal-toc-title">Contents</p>
           <a href="#en-terms-1">1. About the Service</a>
@@ -123,12 +180,12 @@
           <a href="#en-terms-4">4. Fees and royalties</a>
           <a href="#en-terms-5">5. DNS records and renewals</a>
           <a href="#en-terms-6">6. Risks and refunds</a>
-          <a href="#en-terms-7">7. Acceptance and updates</a>
+          <a href="#en-terms-7">7. Acceptance and updates</a><a href="#en-terms-8">8. Registrar V46 / V48</a>
         </nav>
       </div>
     </article>
     <footer class="legal-footer"><span data-legal-project-name></span> · Terms of Use · TON DNS</footer>
   </main>
-  <script type="module" src="assets/js/legal.js?v=1.0.106"></script>
+  <script type="module" src="assets/js/legal.js?v=1.0.199"></script>
 </body>
 </html>
